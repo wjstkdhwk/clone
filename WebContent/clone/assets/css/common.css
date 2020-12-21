@@ -1,0 +1,30 @@
+/*공통부분*/
+
+/*header 부분*/
+#header {
+    min-width: 1200px;
+    border-top: 3px solid #ff7c98;
+    border-bottom: 1px solid #3f291a;
+    background: url(http://www.baskinrobbins.co.kr/assets/images/common/bg_header.gif) 50% 0 repeat-x;
+}
+
+#header .inner {
+    display: block;
+    height: 310px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-decoration: none;
+
+}
+
+#header .sns li {
+    float: left;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+
+.menu_list {
+    height: 1066 px;
+    background: url(http://www.baskinrobbins.co.kr/assets/images/main/img_menu_list.png) 50% 0 no-repeat;
+}
