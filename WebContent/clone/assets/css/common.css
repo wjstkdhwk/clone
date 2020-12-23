@@ -86,6 +86,201 @@ li {
     background: url(http://www.baskinrobbins.co.kr/assets/images/common/icon_modal_close.gif) no-repeat;
 }
 
+#header .member,
+#header .member li {
+    float: left;
+}
+
+#header .member a {
+    float: left;
+    display: block;
+    padding: 0 23px;
+}
+
+#header .member span {
+    display: block;
+    height: 46px;
+    background: url(http://www.baskinrobbins.co.kr/assets/images/common/gnb_menu.png) no-repeat;
+    text-indent: -10000em;
+}
+
+#header .member .login a {
+    padding-left: 0;
+}
+
+#header .member .login span {
+    width: 35px;
+    background-position: 0px -1px;
+}
+
+#header .member .join span {
+    width: 27px;
+    background-position: -97px -1px;
+}
+
+.menu_main span {
+    display: block;
+    height: 46px;
+    background: url(http://www.baskinrobbins.co.kr/assets/images/common/gnb_menu.png) no-repeat;
+    text-indent: -9999em;
+    line-height: 46px;
+}
+
+.flavor .menu_main span {
+    width: 164px;
+    background-position: -133px -3px;
+}
+
+.menu .menu_main span {
+    width: 42px;
+    background-position: -415px -3px;
+}
+
+.nutrition .menu_main span {
+    width: 105px;
+    background-position: -545px -3px;
+}
+
+.event .menu_main span {
+    width: 42px;
+    background-position: -737px -3px;
+}
+
+.store .menu_main span {
+    width: 49px;
+    background-position: -897px -3px;
+}
+
+.about .menu_main span {
+    width: 49px;
+    background-position: -1057px -3px;
+}
+
+.flavor .menu_sub {
+    padding-top: 2px;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+.menu .menu_sub {
+    margin-left: 35px;
+}
+
+.event .menu_sub {
+    margin-left: 43px;
+}
+
+.store .menu_sub {
+    margin-left: 57px;
+}
+
+.about .menu_sub {
+    text-align: right;
+    margin-left: 0;
+    width: 100%;
+    padding-left: 30px;
+    margin-left: 55px;
+}
+
+.about .menu_sub {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.menu_sub {
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0;
+    z-index: 1000;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    -webkit-transition: height .5s ease;
+    transition: height .5s ease;
+}
+
+.menu_sub li {
+    padding-bottom: 12px;
+}
+
+.menu_sub li:first-child {
+    padding-top: 40px;
+}
+
+.menu_sub a {
+    display: block;
+    padding: 5px 0;
+    color: #7b7b7b;
+    line-height: 1.2;
+    opacity: 0;
+    text-transform: uppercase;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
+.menu_depth {
+    float: right;
+}
+
+.menu_depth_bg {
+    overflow: hidden;
+    position: absolute;
+    top: 185px;
+    left: 0;
+    height: 0;
+    z-index: 999;
+    min-width: 100%;
+    border-bottom: 1px solid #693337;
+    background: #fff;
+    -webkit-transition: height .5s ease;
+    transition: height .5s ease;
+}
+
+.menu_depth_bg div {
+    width: 1200px;
+    height: 204px;
+    margin: 0 auto;
+    background: url(http://www.baskinrobbins.co.kr/assets/images/common/img_happypoint_app.jpg) no-repeat 0 65px;
+}
+
+.menu_depth .menu_main {
+    display: block;
+    padding: 0 59px;
+}
+
+.menu_depth:hover .menu_sub,
+.menu_depth:hover .menu_depth_bg {
+    height: 275px;
+}
+
+.menu_depth:hover .menu_depth_bg {
+    margin-top: 1px;
+}
+
+.menu_depth:hover .menu_sub {
+    overflow: visible;
+}
+
+.menu_depth:hover .menu_sub a {
+    color: #948780;
+    opacity: 1;
+    -webkit-transition: opacity .5s linear;
+    transition: opacity .5s linear;
+}
+
+.menu_depth:hover .menu_sub a:hover {
+    color: #ff75ac;
+}
+
+.menu_depth:hover .flavor .menu_sub {
+    margin-left: -44px;
+    opacity: 1;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+}
 
 .menu_list {
     height: 1066 px;
