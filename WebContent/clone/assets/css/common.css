@@ -5,23 +5,279 @@ li {
 
 }
 
+body {
+    color: #483834;
+    font-size: 13px;
+    font-family: "Nanum Barun Gothic", "나눔고딕", "NanumGothic", "돋움", "Dotum", sans-serif;
+    line-height: 1.5;
+    letter-spacing: -.05em;
+}
+
+a {
+    color: #483834;
+}
+
+:hover,
+:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2f231c;
+}
+
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+table,
+td,
+textarea,
+th,
+ul,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 11px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    border: 0;
+    vertical-align: top
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+address {
+    font-style: normal;
+    font-weight: 400
+}
+
+hr {
+    display: none
+}
+
+fieldset {
+    border: 0
+}
+
+legend {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0
+}
+
+input[type=search],
+input[type=text],
+input[type=tel],
+input[type=password],
+textarea {
+    box-sizing: border-box
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin: 4px 0 0;
+    line-height: normal
+}
+
+.sr_only {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.table caption {
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0
+}
+
+.dslide {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    text-align: center;
+}
+
+.dslide a {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-indent: -9999em;
+}
+
+.dslide a span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    height: 6px;
+    width: 6px;
+    margin: -3px 0 0 -3px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #cdccd5;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.dslide a.active span,
+.dslide a:hover span,
+.dslide a:hover a.active span {
+    width: 9px;
+    height: 9px;
+    margin: -4px 0px 0px -4px;
+    background-color: #301d17;
+}
+
+.modal,
+.modal_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal {
+    display: none;
+    overflow: auto;
+    z-index: 1050;
+}
+
+.modal_bg {
+    background: #000;
+    opacity: 0;
+    -webkit-transition: opacity .8s ease;
+    transition: opacity .8s ease;
+}
+
+.modal_container {
+    position: relative;
+    max-width: 1200px;
+    margin: 70px auto;
+    opacity: 0;
+    -webkit-transition: all .4s ease .1s;
+    transition: all .4s ease .1s;
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px);
+}
+
+.modal_content {
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.modal_close {
+    position: absolute;
+    top: 19px;
+    right: -103px;
+}
+
+.modal_close a {
+    display: block;
+    overflow: hidden;
+    width: 87px;
+    height: 87px;
+}
+
+.open_modal {
+    /*overflow:hidden;*/
+    position: relative;
+}
+
+.open_modal .modal.in {
+    display: block;
+}
+
+.open_modal .modal.on {
+    opacity: 1;
+}
+
+.open_modal .modal.on .modal_bg {
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.open_modal .modal.on .modal_container {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
 /*header 부분*/
 #header {
     min-width: 1200px;
     border-top: 3px solid #ff7c98;
     border-bottom: 1px solid #3f291a;
     background: url(http://www.baskinrobbins.co.kr/assets/images/common/bg_header.gif) 50% 0 repeat-x;
+}
+
+#header .inner_header {}
+
+#header .top_area {
     border-bottom: 1px solid #e2d9d6;
+}
+
+#header .top_area .inner {
     position: relative;
     width: 1200px;
     height: 114px;
     padding-top: 21px;
     margin: 0 auto;
-    display: block;
-    height: 310px;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    text-decoration: none;
 }
 
 #header .logo {
@@ -74,6 +330,14 @@ li {
     font-size: 11px;
 }
 
+#header .etc a {
+    color: #4a3d39;
+}
+
+#header .etc .search {
+    padding-left: 26px;
+}
+
 #header .etc .search a {
     display: inline-block;
     width: 54px;
@@ -84,6 +348,19 @@ li {
 
 #header .etc .search a.on {
     background: url(http://www.baskinrobbins.co.kr/assets/images/common/icon_modal_close.gif) no-repeat;
+}
+
+#header .menu_area .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header .menu_area .inner:after,
+#header .member ul:after,
+#gnb .gnb_wrap>ul:after {
+    display: table;
+    clear: both;
+    content: "";
 }
 
 #header .member,
@@ -101,7 +378,7 @@ li {
     display: block;
     height: 46px;
     background: url(http://www.baskinrobbins.co.kr/assets/images/common/gnb_menu.png) no-repeat;
-    text-indent: -10000em;
+    text-indent: -9999em;
 }
 
 #header .member .login a {
@@ -118,7 +395,49 @@ li {
     background-position: -97px -1px;
 }
 
-.menu_main span {
+#header .member .logout span {
+    width: 47px;
+    background-position: 0 -47px;
+}
+
+#header .member .mypage span {
+    width: 50px;
+    background-position: -42px -1px;
+}
+
+#gnb {
+    float: right;
+}
+
+#gnb .gnb_wrap>ul:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+#gnb .gnb_wrap>ul>li {
+    float: left;
+    position: relative;
+}
+
+#gnb .gnb_main a {
+    display: block;
+    padding: 0 59px;
+}
+
+#gnb .gnb_flavor .gnb_main a {
+    padding-left: 0;
+}
+
+#gnb .gnb_about .gnb_main a {
+    padding-right: 0;
+}
+
+#gnb .gnb_nutrition .gnb_main a {
+    padding: 0 27.5px;
+}
+
+#gnb .gnb_main span {
     display: block;
     height: 46px;
     background: url(http://www.baskinrobbins.co.kr/assets/images/common/gnb_menu.png) no-repeat;
@@ -126,69 +445,76 @@ li {
     line-height: 46px;
 }
 
-.flavor .menu_main span {
+#gnb .gnb_flavor .gnb_main span {
     width: 164px;
     background-position: -133px -3px;
 }
 
-.menu .menu_main span {
+#gnb .gnb_menu .gnb_main span {
     width: 42px;
     background-position: -415px -3px;
 }
 
-.nutrition .menu_main span {
+#gnb .gnb_nutrition .gnb_main span {
     width: 105px;
     background-position: -545px -3px;
 }
 
-.event .menu_main span {
+#gnb .gnb_event .gnb_main span {
     width: 42px;
     background-position: -737px -3px;
 }
 
-.store .menu_main span {
+#gnb .gnb_store .gnb_main span {
     width: 49px;
     background-position: -897px -3px;
 }
 
-.about .menu_main span {
+#gnb .gnb_about .gnb_main span {
     width: 49px;
     background-position: -1057px -3px;
 }
 
-.flavor .menu_sub {
+#gnb .gnb_flavor .gnb_sub {
     padding-top: 2px;
     opacity: 0;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease;
 }
 
-.menu .menu_sub {
+#gnb .gnb_flavor .gnb_sub a {
+    padding: 0;
+}
+
+#gnb .gnb_menu .gnb_sub {
     margin-left: 35px;
 }
 
-.event .menu_sub {
+#gnb .gnb_event .gnb_sub {
     margin-left: 43px;
 }
 
-.store .menu_sub {
+#gnb .gnb_store .gnb_sub {
     margin-left: 57px;
 }
 
-.about .menu_sub {
+#gnb .gnb_about .gnb_sub {
+    margin-left: 55px;
+}
+
+#gnb .gnb_about .gnb_sub {
     text-align: right;
     margin-left: 0;
     width: 100%;
     padding-left: 30px;
-    margin-left: 55px;
 }
 
-.about .menu_sub {
+#gnb .gnb_about .gnb_sub li {
     white-space: nowrap;
     text-align: center;
 }
 
-.menu_sub {
+#gnb .gnb_sub {
     overflow: hidden;
     position: absolute;
     top: 100%;
@@ -202,15 +528,15 @@ li {
     transition: height .5s ease;
 }
 
-.menu_sub li {
+#gnb .gnb_sub li {
     padding-bottom: 12px;
 }
 
-.menu_sub li:first-child {
+#gnb .gnb_sub li:first-child {
     padding-top: 40px;
 }
 
-.menu_sub a {
+#gnb .gnb_sub a {
     display: block;
     padding: 5px 0;
     color: #7b7b7b;
@@ -221,11 +547,7 @@ li {
     transition: opacity .3s linear;
 }
 
-.menu_depth {
-    float: right;
-}
-
-.menu_depth_bg {
+#gnb .gnb_bg {
     overflow: hidden;
     position: absolute;
     top: 185px;
@@ -239,50 +561,40 @@ li {
     transition: height .5s ease;
 }
 
-.menu_depth_bg div {
+#gnb .gnb_bg div {
     width: 1200px;
     height: 204px;
     margin: 0 auto;
-    background: url(http://www.baskinrobbins.co.kr/assets/images/common/img_happypoint_app.jpg) no-repeat 0 65px;
+    background: url(http: //www.baskinrobbins.co.kr/assets/images/common/img_happypoint_app.jpg) no-repeat 0 65px;
 }
 
-.menu_depth .menu_main {
-    display: block;
-    padding: 0 59px;
-}
-
-.menu_depth:hover .menu_sub,
-.menu_depth:hover .menu_depth_bg {
+#gnb:hover .gnb_sub,
+#gnb:hover .gnb_bg {
     height: 275px;
 }
 
-.menu_depth:hover .menu_depth_bg {
+#gnb:hover .gnb_bg {
     margin-top: 1px;
 }
 
-.menu_depth:hover .menu_sub {
+#gnb:hover .gnb_sub {
     overflow: visible;
 }
 
-.menu_depth:hover .menu_sub a {
+#gnb:hover .gnb_sub a {
     color: #948780;
     opacity: 1;
     -webkit-transition: opacity .5s linear;
     transition: opacity .5s linear;
 }
 
-.menu_depth:hover .menu_sub a:hover {
+#gnb:hover .gnb_sub a:hover {
     color: #ff75ac;
 }
 
-.menu_depth:hover .flavor .menu_sub {
+#gnb:hover .gnb_flavor .gnb_sub {
     margin-left: -44px;
     opacity: 1;
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
-}
-
-.menu_list {
-    height: 1066 px;
-    background: url(http://www.baskinrobbins.co.kr/assets/images/main/img_menu_list.png) 50% 0 no-repeat;
 }
