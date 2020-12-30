@@ -8,8 +8,35 @@
     <meta name="viewport" content="width=device,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>배스킨라빈스31클론</title>
     <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
-    <script src="assets/js/baskinrobbins.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.flavor_banner').outerHeight();
+    	$(window).scroll(function(event) {
+    		didScroll = true;
+    	});
+    	setInterval(function() {
+    		if (didScroll) {
+    		hasScrolled();
+    		didScroll = false;
+    		}	
+    	}, 250);
+    	
+    	function hasScrolled() {
+    		var st = $(this).scrollTop();
+    		if (Math.abs(lastScrollTop - st) <= delta) 
+    			return; 
+    		if (st> lastScrollTop && st > navbarHeight) {
+        		$('.flavor_banner').removeClass('nav-down').addClass('nav-up');
+        		}
+        	lastScrollTop = st;
+        }
+	</script>
     <script src="assets/js/swipe.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 </head>
 
 <body id="br_main">
@@ -596,6 +623,5 @@
             </div>
         </footer>
     </article>
-</body>
-
+	</body>
 </html>

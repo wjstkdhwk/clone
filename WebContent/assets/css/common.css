@@ -690,7 +690,7 @@ input[type=radio] {
 #br_main .flavor_month .top a {
     height: 150px;
     margin-bottom: 3px;
-    background: #f0dcb6 url(https://www.baskinrobbins.co.kr//assets/images/main/img_flaovr_month_top.png) 50% 0 no-repeat;
+    background: #f0dcb6 url(http://www.baskinrobbins.co.kr/upload/main/1649725280.jpg) 50% 0 no-repeat;
 }
 
 #br_main .flavor_month .flavor_banner {
@@ -703,10 +703,12 @@ input[type=radio] {
 
 #br_main .flavor_month .flavor_banner a {
     height: 854px;
-    background: #513529 url(https://www.baskinrobbins.co.kr//assets/images/main/img_flavor_month.png) 50% 0 no-repeat;
+    background: #513529 url(http://www.baskinrobbins.co.kr/upload/main/1649725342.jpg) 50% 0 no-repeat;
+}
+.nav-up{
 }
 
-#br_main .flavor_month .flavor_banner a.on {
+#br_main .flavor_month .flavor_banner a.nav-up {
     height: 0;
     -webkit-transition: height 1s ease;
     transition: height 1s ease;
