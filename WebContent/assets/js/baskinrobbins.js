@@ -15,7 +15,6 @@
                 this.body.addClass('open_modal');
 
                 target.addClass('in');
-
                 clearTimeout(this.timer);
                 this.timer = setTimeout(function() {
                     target.addClass('on');
@@ -1776,4 +1775,4 @@
     window.BR = window.BR || {};
 
     BR.init();
-});
+})(this);

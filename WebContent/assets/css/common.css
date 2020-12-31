@@ -145,8 +145,6 @@ input[type=radio] {
     float: left;
     position: relative;
 }
-
-
 .dslide {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -690,7 +688,7 @@ input[type=radio] {
 #br_main .flavor_month .top a {
     height: 150px;
     margin-bottom: 3px;
-    background: #f0dcb6 url(http://www.baskinrobbins.co.kr/upload/main/1649725280.jpg) 50% 0 no-repeat;
+    background: #f0dcb6 url(https://www.baskinrobbins.co.kr/assets/images/main/img_flaovr_month_top.png) 50% 0 no-repeat;
 }
 
 #br_main .flavor_month .flavor_banner {
@@ -703,12 +701,10 @@ input[type=radio] {
 
 #br_main .flavor_month .flavor_banner a {
     height: 854px;
-    background: #513529 url(http://www.baskinrobbins.co.kr/upload/main/1649725342.jpg) 50% 0 no-repeat;
-}
-.nav-up{
+    background: #513529 url(https://www.baskinrobbins.co.kr/assets/images/main/img_flavor_month.png) 50% 0 no-repeat;
 }
 
-#br_main .flavor_month .flavor_banner a.nav-up {
+#br_main .flavor_month .flavor_banner a.on {
     height: 0;
     -webkit-transition: height 1s ease;
     transition: height 1s ease;
@@ -741,32 +737,32 @@ input[type=radio] {
 
 #br_main .banner_slide .banner_1 a {
     background-color: #fed104;
-    background-image: url(https://www.baskinrobbins.co.kr//assets/images/main/banner/img_main_banner_1.jpg);
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/main/banner/img_main_banner_1.jpg);
 }
 
 #br_main .banner_slide .banner_2 a {
     background-color: #68d9d7;
-    background-image: url(https://www.baskinrobbins.co.kr//assets/images/main/banner/img_main_banner_2.jpg);
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/main/banner/img_main_banner_2.jpg);
 }
 
 #br_main .banner_slide .banner_3 a {
     background-color: #f6f6f6;
-    background-image: url(https://www.baskinrobbins.co.kr//assets/images/main/banner/img_main_banner_3.jpg);
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/main/banner/img_main_banner_3.jpg);
 }
 
 #br_main .banner_slide .banner_4 a {
     background-color: #eedfe2;
-    background-image: url(https://www.baskinrobbins.co.kr//assets/images/main/banner/img_main_banner_4.jpg);
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/main/banner/img_main_banner_4.jpg);
 }
 
 #br_main .banner_slide .banner_5 a {
     background-color: #ff70a8;
-    background-image: url(https://www.baskinrobbins.co.kr//assets/images/main/banner/img_main_banner_5.jpg);
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/main/banner/img_main_banner_5.jpg);
 }
 
 #br_main .banner_slide .banner_6 a {
     background-color: #91c534;
-    background-image: url(https://www.baskinrobbins.co.kr//assets/images/main/banner/img_main_banner_6.jpg);
+    background-image: url(https://www.baskinrobbins.co.kr/assets/images/main/banner/img_main_banner_6.jpg);
 }
 
 #br_main .banner_slide .dslide {
@@ -794,7 +790,7 @@ input[type=radio] {
     background-color: #301d17;
 }
 
-#br_main .banner_slide .btns {}
+
 
 #br_main .banner_slide .btns a {
     display: block;
@@ -878,12 +874,12 @@ input[type=radio] {
 #br_main .br_menu {
     position: relative;
     height: 1157px;
-    background: url(https://www.baskinrobbins.co.kr//assets/images/main/bg_menu.jpg) 50% 0 no-repeat;
+    background: url(https://www.baskinrobbins.co.kr/assets/images/main/bg_menu.jpg) 50% 0 no-repeat;
 }
 
 #br_main .br_menu .menu_list {
     height: 1066px;
-    background: url(https://www.baskinrobbins.co.kr//assets/images/main/img_menu_list.png) 50% 0 no-repeat;
+    background: url(https://www.baskinrobbins.co.kr/assets/images/main/img_menu_list.png) 50% 0 no-repeat;
 }
 
 #br_main .br_menu .title {
@@ -902,8 +898,8 @@ input[type=radio] {
 }
 
 #br_main .br_menu .icecream {
-    top: 63px;
-    left: 306px;
+    top: 30px;
+    left: 349px;
 }
 
 #br_main .br_menu .icecream a {
@@ -912,8 +908,8 @@ input[type=radio] {
 }
 
 #br_main .br_menu .icecreamcake {
-    top: 63px;
-    left: 738px;
+    top: 29px;
+    left: 782px;
 }
 
 #br_main .br_menu .icecreamcake a {
@@ -922,8 +918,8 @@ input[type=radio] {
 }
 
 #br_main .br_menu .baverage {
-    top: 404px;
-    left: 103px;
+    top: 369px;
+    left: 147px;
 }
 
 #br_main .br_menu .baverage a {
@@ -932,8 +928,8 @@ input[type=radio] {
 }
 
 #br_main .br_menu .coffee {
-    top: 404px;
-    left: 371px;
+    top: 368px;
+    left: 415px;
 }
 
 #br_main .br_menu .coffee a {
@@ -943,7 +939,7 @@ input[type=radio] {
 
 #br_main .br_menu .dessert {
     top: 735px;
-    left: 371px;
+    left: 398px;
 }
 
 #br_main .br_menu .dessert a {
@@ -953,7 +949,7 @@ input[type=radio] {
 
 #br_main .br_menu .gift {
     top: 574px;
-    left: 738px;
+    left: 783px;
 }
 
 #br_main .br_menu .gift a {
